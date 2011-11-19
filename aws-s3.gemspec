@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
 	s.summary = "The standard AWS::S3 with improved support for expiration dates"
 	s.description = "Enables the user to connect to Amazon Web Services using a rest interface."
 	
-
+	s.add_dependency "builder", ">=3.0"
+	
 	s.files = `git ls-files`.split("\n")
 	s.test_files = `git ls-files -- {test,spec}/*`.split("\n")
 	s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }

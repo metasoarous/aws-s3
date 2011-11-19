@@ -1,5 +1,5 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "./aws/s3"
+require "./lib/aws/s3"
 
 Gem::Specification.new do |s|
 	s.name = "aws-s3"
